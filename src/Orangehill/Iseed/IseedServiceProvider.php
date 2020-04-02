@@ -32,7 +32,7 @@ class IseedServiceProvider extends ServiceProvider
     {
         $this->registerResources();
 
-        $this->app['iseed'] = $this->app->share(function($app) {
+        $this->app['iseed'] = $this->app->singleton(function($app) {
             return new Iseed;
         });
         
@@ -43,7 +43,7 @@ class IseedServiceProvider extends ServiceProvider
         });
         */
 
-        $this->app['command.iseed'] = $this->app->share(function($app) {
+        $this->app['command.iseed'] = $this->app->singleton(function($app) {
             return new IseedCommand;
         });
         $this->commands('command.iseed');
