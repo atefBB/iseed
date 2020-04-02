@@ -164,4 +164,12 @@ class IseedCommand extends Command
         $seedPath  = base_path().config('iseed::config.path');
         return [$seedPath.'/'.$className.'.php', $className.'.php'];
     }
+    
+    /**
+     * @author Atef Ben Ali <atef.bettaib@gmail.com>
+     */
+    public function handle()
+    {
+            return $this->fire();
+    } 
 }
