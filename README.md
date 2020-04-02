@@ -7,11 +7,11 @@
 ## Installation
 
 1) For Laravel 5 instalation edit your project's `composer.json` file to require `orangehill/iseed`.
-
+    ```
     "require": {
 		"orangehill/iseed": "dev-master"
 	}
-
+    ```
 If you wish to install it on Laravel 4 you should require 1.1 version:
 
     "require": {
@@ -20,11 +20,11 @@ If you wish to install it on Laravel 4 you should require 1.1 version:
 
 2) Add the service provider by opening a `app/config/app.php` file, and adding a new item to the `providers` array.
 
-    'Orangehill\Iseed\IseedServiceProvider'
+    `'Orangehill\Iseed\IseedServiceProvider'`
 
 3) Update Composer from the CLI:
 
-    composer update
+    `composer update`
 
 ## Artisan command options
 
